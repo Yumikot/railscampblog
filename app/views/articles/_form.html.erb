@@ -1,0 +1,10 @@
+<%= form_for @article do |f| %>
+	<% if @article.errors.any? %>
+		<%= @article.errors.count %>個のエラーがあります
+	<% end %>
+
+	<%= f.text_field :title %></br>
+	<%= f.text_field :text %></br>
+	<%= f.submit :submit %>
+<% end %>
+ 
