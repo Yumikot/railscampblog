@@ -1,0 +1,6 @@
+
+  <%= comment.body %><br>
+  <%= comment.commenter %>
+　<%= link_to "削除",[comment.article, comment], method: :delete, data: {confirm:
+      "Are you sure?"} %>
+  <hr>
